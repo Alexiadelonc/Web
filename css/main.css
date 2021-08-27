@@ -1,25 +1,58 @@
-/*Header*/ 
 header {
     background-color:#D8D2C4; 
 }
 
-/*Logo Header*/
-.listaLogoHeader img {
+/* Header*/
+.listaHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.listaIzqHeader img {
     width: 90px;
     height: auto;
     margin: 20px;
+    
 }
 
-.listaItemsHeader a {
+.listaDerHeader {
+    color: #005494;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.listaDerHeader a {
     text-decoration: none;
     color:#005494 ;
     font-family:'Montserrat', sans-serif;
     font-weight: 500;
-   }
+}
 
-.listaItemsHeader ul {
-color: #005494;
-font-family: 'Montserrat', sans-serif;
+.listaDerHeader li {
+    margin: 20px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.listaDerHeader ul{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.listaDerHeader li:hover ul{
+    float: none;
+    display: block;
+    text-align: left;
 }
 
 
@@ -27,6 +60,7 @@ font-family: 'Montserrat', sans-serif;
 
 body {
     background-color: #F8F2E6 ;
+    margin: 0px;
 }
 p {
     color: rgb(110, 120, 131);
@@ -36,11 +70,6 @@ p {
     line-height: 250%;
 }
 
-video {
-    width: 320px;
-    height: auto;
-    margin-left: 38%;
-}
 
 /*Tienda*/
 h1{
@@ -60,4 +89,25 @@ th, td {
 }
 tr:hover {
     background-color: lightslategrey;
+}
+
+/*Footer*/
+footer{
+    background-color: indianred;
+    padding-bottom: 20px;
+}
+.contactos {
+    font-family:'Montserrat', sans-serif;
+    color: #005494;
+    margin: 10px;
+}
+.mediosDeContacto {
+    font-family:'Montserrat Medium 500', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0px 50px;
+
 }
