@@ -88,8 +88,9 @@ tr:hover {
 
 /*Footer*/
 footer{
-    background-color: #D8D2C4;
-    padding-bottom: 20px;
+  background: rgb(216,185,110);
+  background: linear-gradient(0deg, rgba(216,185,110,1) 0%, rgba(248,242,230,1) 100%);
+  padding-bottom: 20px;
 }
 .contactos {
     font-family:'Montserrat', sans-serif;
@@ -170,3 +171,31 @@ font-family:'Montserrat Medium 500', sans-serif;
           display: flex;
       }
   }
+
+  /*Eventos*/
+
+  .tituloEventos {
+    text-align: center;
+  }
+
+  .bajadaH3 {
+    font-family: 'Montserrat Medium 500', sans-serif; 
+    text-align: center;
+  }
+  .galeriaImagenesEventos {
+    display:grid ; 
+    grid-template-columns: 1fr 1fr 1fr; 
+  }
+
+  .galeriaImagenesEventos img {
+    width: 30vw;
+    justify-self: center;
+    margin-bottom: 5%;
+    transition: 2s;
+
+  }
+  .galeriaImagenesEventos img:hover {
+    transform: scale(1.3);
+    z-index: 1;
+  }
+
