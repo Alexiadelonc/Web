@@ -2,3 +2,16 @@
     display:flex;
     justify-content:center;
 }
+
+.carousel {
+width: 100vw;
+margin-top: 10vh;
+margin-bottom: 10vh;
+}
+
+@media (min-width:991px) {
+.carousel {
+    width: 50vw;
+    margin-left: 20vw;
+}    
+}
