@@ -1,0 +1,49 @@
+/* IMPORTS */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* PARTIAL */
+header {
+  font-family: "Montserrat", sans-serif;
+  background-color: #c4cbd8; }
+  header nav {
+    margin-bottom: 50px; }
+    header nav .menu-padre {
+      background: #d8d2c4; }
+      header nav .menu-padre .menu_item {
+        list-style: none;
+        flex: auto; }
+      header nav .menu-padre li {
+        position: relative; }
+      header nav .menu-padre li > ul {
+        position: absolute;
+        display: none;
+        background: #afaa9f;
+        z-index: 1; }
+      header nav .menu-padre li:hover > ul {
+        display: block;
+        width: 100%;
+        list-style: none; }
+      header nav .menu-padre .menu_link {
+        text-decoration: none;
+        color: white;
+        padding: 30px;
+        text-align: center;
+        display: block; }
+
+@media (min-width: 800px) {
+  .menu-padre {
+    display: flex; } }
+
+/* PAGES */
+.pagination {
+  display: flex;
+  justify-content: center; }
+
+.carousel {
+  width: 100vw;
+  margin-top: 10vh;
+  margin-bottom: 10vh; }
+
+@media (min-width: 991px) {
+  .carousel {
+    width: 50vw;
+    margin-left: 20vw; } }

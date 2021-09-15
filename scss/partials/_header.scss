@@ -1,0 +1,43 @@
+header {
+    font-family: "Montserrat", sans-serif;
+    background-color: #c4cbd8;
+    nav {
+        margin-bottom: 50px;
+        .menu-padre {
+            background: #d8d2c4;
+            .menu_item {
+                list-style: none;
+                flex: auto;
+            }
+            li {
+                position: relative;
+            }
+
+            li > ul {
+                position: absolute;
+                display: none;
+                background: #afaa9f;
+                z-index: 1;
+            }
+
+            li:hover > ul {
+                display: block;
+                width: 100%;
+                list-style: none;
+            }
+
+            .menu_link {
+                text-decoration: none;
+                color: white;
+                padding: 30px;
+                text-align: center;
+                display: block;
+            }
+        }
+    }
+}
+@media (min-width: 800px) {
+    .menu-padre {
+        display: flex;
+    }
+}

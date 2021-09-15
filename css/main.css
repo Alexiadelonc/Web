@@ -3,53 +3,6 @@
     padding:0;
     box-sizing: border-box;
   }
-  header {
-    font-family:'Montserrat', sans-serif;
-    background-color: #D8D2C4;
-  }
-  .menu-padre, 
-  .menu_item{
-    list-style: none;
-  }
-  
-  li{
-    position: relative;  
-  }
-  
-  li > ul {
-    position: absolute;
-    display: none;
-    background: #afaa9f;
-    z-index: 1;
-    
-  }
-  
-  li:hover > ul {
-    display: block;
-    width: 100%;
-    list-style: none;
-  }
-  
-  .menu-padre{
-    background: #D8D2C4;
-  }
-  
-  .menu_item{
-    flex: auto;
-  }
-  
-  .menu_link{
-   text-decoration: none;
-   color: white;
-    padding: 30px;
-    text-align: center; 
-    display: block;
-  }
-  
-  nav{
-    margin-bottom: 50px;
-  }
-
 
 /*Body*/
 
@@ -166,11 +119,7 @@ font-family:'Montserrat Medium 500', sans-serif;
        flex-direction: column;
      }
   }
-  @media (min-width: 800px) {
-      .menu-padre{
-          display: flex;
-      }
-  }
+  
 
   /*Eventos*/
 
