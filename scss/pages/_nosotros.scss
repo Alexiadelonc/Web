@@ -1,0 +1,55 @@
+.content {
+    grid-area: content;
+    background-color: rgb(228, 228, 228);
+    }
+  .content h1 {
+      font-family: 'Montserrat', sans-serif;
+  }
+  .content p {
+  color: #005494;
+  text-align: justify;
+  font-family:'Montserrat Medium 500', sans-serif;
+  }
+  .main-nav {
+    grid-area: nav;
+  }
+  .side {
+    grid-area: sidebar;
+  }
+  .ad {
+    grid-area: ad;
+  }
+  .wrapper {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-areas:
+        "nav"
+        "content"
+        "sidebar"
+        "ad";
+    }
+    
+    @media (min-width: 500px) {
+      .wrapper {
+          grid-template-columns: 1fr 3fr;
+          grid-template-areas:
+          "nav     nav"
+          "sidebar content"
+          "ad      ad";
+      }
+      .main-nav ul {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    @media (min-width: 700px) {
+      .wrapper {
+          grid-template-columns: 1fr 4fr 1fr;
+          grid-template-areas:
+          "nav    content sidebar"
+          "nav    content ad"
+       }
+       .main-nav ul {
+         flex-direction: column;
+       }
+    }
