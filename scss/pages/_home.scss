@@ -1,17 +1,46 @@
+body{
+    background-color: #F8F2E6;
+}
+
 .pagination{
     display:flex;
     justify-content:center;
 }
 
-.carousel {
-width: 100vw;
-margin-top: 10vh;
-margin-bottom: 10vh;
-}
+.logoIndex {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    .logoIndex__Img {
+        width: 20vw;
+        height: auto;
+    }
+  }
 
-@media (min-width:991px) {
-.carousel {
-    width: 50vw;
-    margin-left: 20vw;
+.descripcionHome {
+display: flex;
+justify-content: center;
+font-family:'Montserrat', sans-serif;
+font-weight:800 ;
+text-align: center;
+color: #D5CFBF;
+margin-top: 60px;
+flex-direction: column;
+align-items: center;
+.descripcionHome__Span {
+    height: 3px;
+    border: 0;
+    width: 600px;
+    color: #a39f96 ;
+}
+.descripcionHome__Text{
+    width: 700px;
+    margin-bottom: 0%;
+}
+  }
+@media (min-width:991px) {    
+.carouselCentrado {
+width: 50vw;
+margin-top: 50px;
 }    
 }
