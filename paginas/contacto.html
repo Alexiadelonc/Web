@@ -15,10 +15,10 @@
         <nav>
             <ul class="menu-padre">
                 <li class="menu_item"><a class="menu_link" href="../index.html">INICIO</a></li>
-                <li class="menu_item"><a class="menu_link" href="tienda.html">TIENDA</a>
+                <li class="menu_item"><a class="menu_link" href="#">TIENDA</a>
                     <ul class="menu-sub1">
-                        <li><a class="menu_link" href="#">WINE</a></li>
-                        <li><a class="menu_link" href="#">MERCADO ORGANICO</a></li>
+                        <li><a class="menu_link" href="tienda.html">WINE</a></li>
+                        <li><a class="menu_link" href="organico.html">MERCADO ORGANICO</a></li>
                     </ul>
                 <li class="menu_item"><a class="menu_link" href="eventos.html">EVENTOS</a></li>
                 <li class="menu_item"><a class="menu_link" href="historia.html">HISTORIA</a></li>
@@ -33,32 +33,29 @@
         </nav>
     </header>
 
-
-    <h1> Contacto </h1>
-
     <div>
         <!--Medios de contacto-->
     </div>
-    <form action=" ">
-        <label> Nombre y Apellido </label> <br>
-        <input type="text"> <br> <br>
-        <select name="Provincia">
-            <option value="Buenos Aires"> Buenos Aires </option>
-            <option value="Mendoza"> Mendoza </option>
-            <option value="Cordoba"> Córdoba </option>
-            <option value="Neuquen"> Neuquen </option>
-            <option value="Salta"> Salta </option>
-        </select> <br> <br>
-        <input type="checkbox" id="Mercado Envios">
-        <label> Mercado Envios </label> <br>
-        <input type="checkbox" id="Retiro en el local">
-        <label> Retiro en el local </label> <br>
-        <input type="checkbox" id="Acuerdo con el vendedor">
-        <label> Acuerdo con el vendedor </label> <br>
-        <input type="reset" value="Limpiar formulario">
-        <input type="submit" value="Enviar formulario">
-
+    <h1 class="formContacto">Contactanos</h1>
+    <form id="form" class="topBefore">
+            
+              <input class="inputContactanos" id="name" type="text" placeholder="Nombre">
+              <input class="inputContactanos" id="email" type="text" placeholder="E-mail">
+              <textarea class="textContactanos" id="message" type="text" placeholder="Mensaje"></textarea>
+      <input id="submit" type="submit" value="Enviar">
+      
     </form>
+
+    <footer>
+        <p class="contactos"> CONTACTOS </p>
+
+        <ul class="mediosDeContacto">
+            <li>WhatsApp</li>
+            <li>Instagram</li>
+            <li>Facebook</li>
+        </ul>
+
+    </footer>
 
 </body>
 
